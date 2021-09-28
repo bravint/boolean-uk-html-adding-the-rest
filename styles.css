@@ -27,14 +27,14 @@ header {
   border-radius: 3%;
   display: grid;
   grid-template:
-    "bar" 50px /
+    "searchBar" 50px /
     250px
 }
   .search1 {
     margin: 3px 5px;
     display: grid;
     place-items: left;
-    grid-area: bar;
+    grid-area: searchBar;
     background-color: #fbfbfb;
     border: 2px solid black;
     border-radius: 5%;
@@ -47,11 +47,7 @@ header {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
- .links1,
- .links2,
- .links3,
- .links4,
- .links5 {
+.links > div {
    margin: 3px;
    border: 2px dotted green;
    border-radius: 5%;
@@ -184,6 +180,7 @@ padding-top: 20px;
   }
 
   /*responsive*/
+
   @media screen and (max-width: 800px) {
   .linkedin {
     grid-template:
