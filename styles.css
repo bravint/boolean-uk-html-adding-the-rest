@@ -1,0 +1,198 @@
+* {
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  background-color: white;
+}
+
+.nav {
+  max-width: 1024px;
+  margin: auto;
+  display: grid;
+  grid-template:
+    "logo    search     links"   60px /
+     60px    1fr        300px;
+}
+
+.logo {
+  margin: 3px 3px 3px 0px;
+  border: 2px dotted darkblue;
+  border-radius: 5%;
+}
+
+.search {
+  margin: 3px 3px 3px 5px;
+  border: 2px dotted darkblue;
+  border-radius: 3%;
+  display: grid;
+  grid-template:
+    "bar" 50px /
+    250px
+}
+  .search1 {
+    margin: 3px 5px;
+    display: grid;
+    place-items: left;
+    grid-area: bar;
+    background-color: #fbfbfb;
+    border: 2px solid black;
+    border-radius: 5%;
+  }
+
+.links {
+  margin: 3px 3px 3px 5px;
+  border: 2px dotted darkblue;
+  border-radius: 3%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+ .links1,
+ .links2,
+ .links3,
+ .links4,
+ .links5 {
+   margin: 3px;
+   border: 2px dotted green;
+   border-radius: 5%;
+ }
+
+main {
+background-color: #d9d9d9;
+padding-top: 20px;
+}
+
+.linkedin {
+  height: 100vh;
+  margin: auto;
+  max-width: 1024px;
+
+  display: grid;
+  gap: 20px;
+  grid-template:
+    "left    mid    right"    1fr /
+     220px   1fr    220px;
+  }
+
+  .leftTier1 {
+    background-color: white;
+    grid-area: left;
+    border: 2px dotted darkblue;
+    display: grid;
+    grid-template-rows: 180px 50px 50px 50px;
+  }
+
+  .left1, .left2, .left3, .left4 {
+    margin: 3px;
+    border: 2px dotted green;
+  }
+
+  .leftTier2 {
+    margin-top: 20px;
+    background-color: white;
+    grid-area: left;
+    border: 2px dotted darkblue;
+    display: grid;
+    grid-template-rows: 150px;
+  }
+
+  .midTier1 {
+    background-color: white;
+    grid-area: mid;
+    border: 2px dotted darkblue;
+    display: grid;
+    grid-template-rows: 50px 50px;
+  }
+
+  .mid1, .mid2 {
+    margin: 3px;
+    border: 2px dotted green;
+  }
+
+  .mid1 {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+  }
+
+  .mt1, .mt2 {
+    margin: 3px;
+    border: 2px dotted red;
+  }
+
+  .mt1 {
+    border-radius: 50%;
+  }
+
+  .mid2 {
+    display: grid;
+    grid-template-columns : 1fr 1fr 1fr 1fr;
+  }
+
+  .mt3, .mt4, .mt5, .mt6 {
+    margin: 3px;
+    border: 2px dotted red;
+  }
+
+  .midTier2 {
+    margin-top: 20px;
+    background-color: white;
+    grid-area: mid;
+    border: 2px dotted darkblue;
+    display: grid;
+    grid-template-rows: 300px 300px;
+  }
+
+  .mid3, .mid4 {
+    margin: 3px;
+    border: 2px dotted green;
+  }
+
+  .rightTier1 {
+    background-color: white;
+    grid-area: right;
+    border: 2px dotted darkblue;
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+  }
+  .right1, .right2, .right3, .right4, .right5 {
+    margin: 3px;
+    border: 2px dotted green;
+  }
+
+  .rightTier2 {
+    margin-top: 20px;
+    background-color: white;
+    grid-area: right;
+    border: 2px dotted darkblue;
+    display: grid;
+    grid-template-rows: 150px;
+  }
+  .right6 {
+    margin: 3px;
+  }
+
+  .rightTier3 {
+    margin-top: 20px;
+    background-color: white;
+    grid-area: right;
+    border: 2px dotted darkblue;
+    display: grid;
+    grid-template-rows: 150px;
+  }
+  .right7 {
+    margin: 3px;
+  }
+
+  /*responsive*/
+  @media screen and (max-width: 800px) {
+  .linkedin {
+    grid-template:
+    "left    mid"    1fr /
+     220px   1fr;
+  }
+
+  .right {
+      display: none;
+    }
+  }
