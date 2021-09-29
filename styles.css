@@ -2,6 +2,8 @@
   margin: 0;
 }
 
+/*HEADER*/
+
 header {
   background-color: white;
 }
@@ -53,6 +55,8 @@ header {
    border-radius: 5%;
  }
 
+/*MAIN SECTION*/
+
 main {
 background-color: #d9d9d9;
 padding-top: 20px;
@@ -78,7 +82,7 @@ padding-top: 20px;
     grid-template-rows: 180px 50px 50px 50px;
   }
 
-  .left1, .left2, .left3, .left4 {
+  .leftTier1 > div {
     margin: 3px;
     border: 2px dotted green;
   }
@@ -110,7 +114,7 @@ padding-top: 20px;
     grid-template-columns: 40px 1fr;
   }
 
-  .mt1, .mt2 {
+  .mid1 > div {
     margin: 3px;
     border: 2px dotted red;
   }
@@ -124,7 +128,7 @@ padding-top: 20px;
     grid-template-columns : 1fr 1fr 1fr 1fr;
   }
 
-  .mt3, .mt4, .mt5, .mt6 {
+  .mid2 > div {
     margin: 3px;
     border: 2px dotted red;
   }
@@ -192,3 +196,24 @@ padding-top: 20px;
       display: none;
     }
   }
+
+  @media screen and (max-width: 624px) {
+    .linkedin {
+      grid-template:
+       "mid"   1fr /
+       1fr;
+    }
+  
+    .right {
+        display: none;
+      }
+
+    .left {
+        display: none;
+      }
+
+    .links
+    {
+      display: none;
+    }
+    }
